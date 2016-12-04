@@ -4,9 +4,9 @@ import App from './components/App';
 import HomePage from './components/home/HomePage';
 import CvPage from './components/cv/CvPage';
 
-export const routes = (
+export default (
   <Route path="/" component={App}>
-    <IndexRoute componet={HomePage}/>
-    <Route path="cv" component={CvPage}/>
+    <IndexRoute component={HomePage} />
+    <Route path="cv" component={CvPage} />
   </Route>
 );
